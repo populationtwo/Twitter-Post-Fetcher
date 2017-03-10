@@ -375,12 +375,12 @@
                 'tweet?in_reply_to=' + tids[n] +
                 '" class="twitter_reply_icon"' +
                 (targetBlank ? ' target="_blank">' : '>') +
-                'Reply</a><a href="https://twitter.com/intent/retweet?' +
+                '<i aria-hidden="true"></i><span>Reply</span></a><a href="https://twitter.com/intent/retweet?' +
                 'tweet_id=' + tids[n] + '" class="twitter_retweet_icon"' +
-                (targetBlank ? ' target="_blank">' : '>') + 'Retweet</a>' +
+                (targetBlank ? ' target="_blank">' : '>') + '<i aria-hidden="true"></i><span>Retweet</span></a>' +
                 '<a href="https://twitter.com/intent/favorite?tweet_id=' +
                 tids[n] + '" class="twitter_fav_icon"' +
-                (targetBlank ? ' target="_blank">' : '>') + 'Favorite</a></p>';
+                (targetBlank ? ' target="_blank">' : '>') + '<i aria-hidden="true"></i><span>Favorite</span></a></p>';
           }
           if (showImages && images[n] !== undefined && extractImageUrl(images[n]) !== undefined) {
             op += '<div class="media">' +
